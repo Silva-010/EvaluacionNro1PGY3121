@@ -66,3 +66,7 @@ nav ul li a:hover{
     font-family: rale;
     src: url(fonts/Ubuntu-Regular.ttf);
 }
+
+img {
+    height: 1000px;
+}
