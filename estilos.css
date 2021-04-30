@@ -62,15 +62,14 @@ nav ul li a:hover{
     color: rgb(0, 0, 0);
 }
 
+@font-face{
+    font-family: rale;
+    src: url(Fuentes/Ubuntu-Regular.ttf)
+}
+
 h1 {
     color: black;
     font-size: 40px;
     text-align: center;
-    font-family: rale;
-    src: url(Fuentes/Ubuntu-Regular.ttf);
-}
-
-@font-face{
-    font-family: rale;
-    src: url(Fuentes/Ubuntu-Regular.ttf)
+    font-family: rale
 }
