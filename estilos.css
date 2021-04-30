@@ -66,3 +66,23 @@ nav ul li a:hover{
     font-family: rale;
     src: url(fonts/Ubuntu-Regular.ttf);
 }
+
+h1{
+    color:white;
+    font-family: rale;
+    background-color: hsl(199, 59%, 22%);
+    width: 40%;
+    margin: auto;
+}
+
+h4{
+    color:white;
+    font-family: rale;
+    background-color: hsl(199, 59%, 22%);
+    width: 25%;
+    margin: auto;
+}
+
+img{
+    height: 900px;
+}
