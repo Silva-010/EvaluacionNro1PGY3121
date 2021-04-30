@@ -33,7 +33,7 @@ body{
 
 .container .card{
     width: 330px;
-    height: 430px;
+    height: 400px;
     border-radius: 8px;
     box-shadow: 0 2px 2px hsl(199, 59%, 22%);
     overflow: hidden;
