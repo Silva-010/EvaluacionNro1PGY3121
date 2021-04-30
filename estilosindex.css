@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*ESTILOS DE MENÚ*/
+
+
+header{
+    width: 100%;
+    background-color: hsl(199, 59%, 22%);
+    height: 70px;
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    background-color: hsl(199, 59%, 22%);
+    margin: auto;
+}
+
+.logo {
+    width: 30%;
+    height: 70px;
+    background-color: hsl(199, 59%, 22%);
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.logo p a {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: rale;
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    background-color: hsl(199, 59%, 22%);
+    float: right;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: rale;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+@font-face{
+    font-family: rale;
+    src: url(Fuentes/Ubuntu-Regular.ttf);
+}
+
+
+/*ESTILOS CARRUSEL*/
+
+
+h1{
+    color:white;
+    font-family: rale;
+    background-color: hsl(199, 59%, 22%);
+    width: 40%;
+    margin: auto;
+}
+
+h4{
+    color:white;
+    font-family: rale;
+    background-color: hsl(199, 59%, 22%);
+    width: 25%;
+    margin: auto;
+}
+
+img{
+    height: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
