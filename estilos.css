@@ -62,14 +62,6 @@ nav ul li a:hover{
     color: rgb(0, 0, 0);
 }
 
-pre{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: rale;
-}
-
 
 @font-face{
     font-family: rale;
