@@ -91,6 +91,14 @@ img{
     height: 900px;
 }
 
+div > div > div > a{
+    color: white;
+    background-color: hsl(199, 59%, 22%);
+}
+
+div > div > div > a:hover{
+    color: rgb(0, 0, 0);
+}
 
 
 
