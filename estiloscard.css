@@ -8,7 +8,7 @@
 body{
     width: 100%;
     height: 100%;
-    font-family: rale;
+    font-family: gigaregu;
     letter-spacing: 0.03;
     line-height: 1.6;
 }
@@ -70,11 +70,11 @@ body{
 
 div > div > h4 {
     background-color: hsl(199, 59%, 22%);
-    font-family: rale;
+    font-family: gigaregu;
     width: auto;
 }
 
 div > div > h3 {
-    font-family: rale;
+    font-family: gigaregu;
     color: hsl(199, 59%, 22%);
 }
