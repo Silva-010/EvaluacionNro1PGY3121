@@ -67,3 +67,14 @@ body{
     text-decoration: none;
     color: hsl(199, 59%, 22%);
 }
+
+div > div > h4 {
+    background-color: hsl(199, 59%, 22%);
+    font-family: rale;
+    width: auto;
+}
+
+div > div > h3 {
+    font-family: rale;
+    color: hsl(199, 59%, 22%);
+}
