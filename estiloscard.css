@@ -8,7 +8,7 @@
 body{
     width: 100%;
     height: 100%;
-    font-family: gigaregu;
+    font-family: gigabold;
     letter-spacing: 0.03;
     line-height: 1.6;
 }
@@ -70,11 +70,16 @@ body{
 
 div > div > h4 {
     background-color: hsl(199, 59%, 22%);
-    font-family: gigaregu;
+    font-family: gigabold;
     width: auto;
 }
 
 div > div > h3 {
+    font-family: gigabold;
+    color: hsl(199, 59%, 22%);
+}
+
+div > div > p {
     font-family: gigaregu;
     color: hsl(199, 59%, 22%);
 }
