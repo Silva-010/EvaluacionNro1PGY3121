@@ -32,7 +32,7 @@ header{
     font-size: 40px;
     text-decoration: none;
     font-weight: bold;
-    font-family: rale;
+    font-family: gigabold;
 }
 
 nav{
@@ -57,31 +57,38 @@ nav ul li a {
     padding-left: 15px;
     font-weight: bold;
     letter-spacing: 1px;
-    font-family: rale;
+    font-family: gigaregu;
 }
 
 nav ul li a:hover{
     color: rgb(0, 0, 0);
 }
 
+
+/*FUENTES*/
 @font-face{
-    font-family: rale;
-    src: url(fonts/Ubuntu-Regular.ttf);
+    font-family: gigabold;
+    src: url(fonts/Locomotype\ \ GigaSansBold.otf);
+}
+
+@font-face{
+    font-family: gigaregu;
+    src: url(fonts/Locomotype\ \ GigaSansRegular.otf);
 }
 
 /*ESTILOS CARRUSEL*/
 
 h1{
     color:white;
-    font-family: rale;
+    font-family: gigabold;
     background-color: hsl(199, 59%, 22%);
-    width: 40%;
+    width: 55%;
     margin: auto;
 }
 
 h4{
     color:white;
-    font-family: rale;
+    font-family: gigaregu;
     background-color: hsl(199, 59%, 22%);
     width: 25%;
     margin: auto;
@@ -91,16 +98,6 @@ img{
     height: 900px;
 }
 
-div > div > div > a{
-    color: white;
-    background-color: hsl(199, 59%, 22%);
-    font-family: rale;
-    font-size: x-large;
-}
-
-div > div > div > a:hover{
-    color: rgb(0, 0, 0);
-}
 
 
 
