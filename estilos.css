@@ -94,6 +94,8 @@ img{
 div > div > div > a{
     color: white;
     background-color: hsl(199, 59%, 22%);
+    font-family: rale;
+    font-size: x-large;
 }
 
 div > div > div > a:hover{
