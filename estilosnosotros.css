@@ -19,3 +19,32 @@ body:before {
     opacity: 0.5;
     z-index: -1;
 }
+
+/*FUENTES*/
+@font-face{
+    font-family: gigabold;
+    src: url(Fuentes/Locomotype\ \ GigaSansBold.otf);
+}
+
+@font-face{
+    font-family: gigaregu;
+    src: url(Fuentes/Locomotype\ \ GigaSansRegular.otf);
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: gigabold;
+    font-size: 40px;
+
+}
+
+h3 {
+    color: white;
+    text-align: initial;
+    font-family: gigaregu;
+    font-size: 25px;
+    justify-content: center;
+    padding: 1em;
+}
+
