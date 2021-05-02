@@ -1,8 +1,85 @@
+/*ESTILO MENÚ*/
+
 *{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color: hsl(199, 59%, 22%);
+    height: 70px;
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    background-color: hsl(199, 59%, 22%);
+    margin: auto;
+}
+
+.logo {
+    width: 30%;
+    height: 70px;
+    background-color: hsl(199, 59%, 22%);
+    float: left;
+    padding-top: 10px;
     box-sizing: border-box;
 }
 
-body{
+.logo p a {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: gigabold;
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    background-color: hsl(199, 59%, 22%);
+    float: right;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: gigabold;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*ESTILO FORMULARIO*/
+
+div{
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    font-weight: 100;
+    background-color:hsl(199, 59%, 22%);
+}
+
+.content{
     background-color: white;
     color: white;
     font-family: gigaregu;
@@ -16,11 +93,6 @@ body{
     padding: 1.5em;
 }
 
-.logo{
-    text-align: center;
-    font-size: 3em;
-    font-family: gigabold;
-}
 
 .contact-wrapper{
     box-shadow: 0 0 20px 0 hsl(199, 59%, 22%);
@@ -101,9 +173,7 @@ body{
 }
 
 @media (min-width: 700px){
-    body{
-        padding: 0 4rem;
-    }
+    
 
     .contact-wrapper{
         display: grid;
@@ -122,6 +192,8 @@ body{
     }
 }
 
+
+
 /*FUENTES*/
 @font-face{
     font-family: gigabold;
@@ -132,3 +204,5 @@ body{
     font-family: gigaregu;
     src: url(fonts/Locomotype\ \ GigaSansRegular.otf);
 }
+
+
