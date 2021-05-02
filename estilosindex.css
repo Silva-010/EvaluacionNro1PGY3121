@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-
 /*ESTILOS DE MENÚ*/
-
 
 header{
     width: 100%;
@@ -34,7 +32,7 @@ header{
     font-size: 40px;
     text-decoration: none;
     font-weight: bold;
-    font-family: rale;
+    font-family: gigabold;
 }
 
 nav{
@@ -59,33 +57,38 @@ nav ul li a {
     padding-left: 15px;
     font-weight: bold;
     letter-spacing: 1px;
-    font-family: rale;
+    font-family: gigabold;
 }
 
 nav ul li a:hover{
     color: rgb(0, 0, 0);
 }
 
+
+/*FUENTES*/
 @font-face{
-    font-family: rale;
-    src: url(Fuentes/Ubuntu-Regular.ttf);
+    font-family: gigabold;
+    src: url(Fuentes/Locomotype\ \ GigaSansBold.otf);
 }
 
+@font-face{
+    font-family: gigaregu;
+    src: url(Fuentes/Locomotype\ \ GigaSansRegular.otf);
+}
 
 /*ESTILOS CARRUSEL*/
 
-
 h1{
     color:white;
-    font-family: rale;
+    font-family: gigabold;
     background-color: hsl(199, 59%, 22%);
-    width: 40%;
+    width: 55%;
     margin: auto;
 }
 
 h4{
     color:white;
-    font-family: rale;
+    font-family: gigaregu;
     background-color: hsl(199, 59%, 22%);
     width: 25%;
     margin: auto;
@@ -94,23 +97,3 @@ h4{
 img{
     height: 900px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
