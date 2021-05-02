@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilosservicios.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="ancho">
+              <div class="logo">
+                <p><a href="index.html">P&S Veterinaria</a></p>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="servicios.html">Servicios</a></li>
+                  <li><a href="#">Clientes</a></li>
+                  <li><a href="veterinarios.html">Veterinarios</a></li>
+                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        <form action="resultado.html" method="GET">
+            <p>
+                <table border="2px">
+                    <tr>
+                        <td><label for="Nombre">Nombre: </label></td>
+                        <td><input type="text" name="Nombre" id="nombre"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Apellido">Apellido</label></td>
+                        <td><input type="text" name="Apellido" id="apellido"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="E-Mail">E-Mail</label></td>
+                        <td><input type="text" name="E-Mail" id="e-mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sexo">Sexo</label></td>
+                        <td>
+                            <input type="radio" name="sexo" id="masculino" value="Masculino">
+                            <label for="masculino">Masculino</label>
+                            <br/>
+                            <input type="radio" name="sexo" id="femenino" value="Femenino">
+                            <label for="femenino">Femenino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Intereses">Interes</label></td>
+                        <td>
+                            <input name="cbipeliculas" type="checkbox" checked="checked" /> Peliculas
+                            <br/>
+                            <input name="cbilibros" type="checkbox"/>Libros
+                            <br/>
+                            <input name="cbiinternet" type="checkbox"/> Internet
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="comentarios">Comentarios</label></td>
+                        <td><textarea name="comentarios" rows="2" cols="30">Tus comentarios aquí...</textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Enviar">
+
+                            <input type="reset">
+
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        </form>
+    </body>
+</html>
