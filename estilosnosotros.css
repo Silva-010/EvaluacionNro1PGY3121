@@ -15,7 +15,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(155, 155, 172),  hsl(199, 100%, 25%));
+    background: linear-gradient(rgb(161, 161, 182),  hsl(200, 100%, 7%));
     opacity: 0.5;
     z-index: -1;
 }
