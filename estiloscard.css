@@ -83,3 +83,14 @@ div > div > p {
     font-family: gigaregu;
     color: hsl(199, 59%, 22%);
 }
+
+/*FUENTES*/
+@font-face{
+    font-family: gigabold;
+    src: url(fonts/Locomotype\ \ GigaSansBold.otf);
+}
+
+@font-face{
+    font-family: gigaregu;
+    src: url(fonts/Locomotype\ \ GigaSansRegular.otf);
+}
