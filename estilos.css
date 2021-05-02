@@ -94,6 +94,10 @@ h4{
     margin: auto;
 }
 
+body{
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
 
 
 
