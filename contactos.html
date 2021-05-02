@@ -3,8 +3,8 @@
     <head>
         <title>Formularios</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="estilosservicios.css">
         <link rel="stylesheet" href="estilosindex.css">
+        <link rel="stylesheet" href="estiloscontacto.css">
     
     <body>
         <header>
@@ -25,43 +25,24 @@
             </div>
           </header>
         <form action="resultado.html" method="GET">
-            <p>
-                <table border="2px">
+                <br>
+                <br>
+                <table border="5px">   
                     <tr>
-                        <td><label for="Nombre">Nombre: </label></td>
+                        <td><label for="Nombre y Apellido">Nombre y apellido: </label></td>
                         <td><input type="text" name="Nombre" id="nombre"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Apellido">Apellido</label></td>
-                        <td><input type="text" name="Apellido" id="apellido"></td>
                     </tr>
                     <tr>
                         <td><label for="E-Mail">E-Mail</label></td>
                         <td><input type="text" name="E-Mail" id="e-mail"></td>
                     </tr>
                     <tr>
-                        <td><label for="sexo">Sexo</label></td>
-                        <td>
-                            <input type="radio" name="sexo" id="masculino" value="Masculino">
-                            <label for="masculino">Masculino</label>
-                            <br/>
-                            <input type="radio" name="sexo" id="femenino" value="Femenino">
-                            <label for="femenino">Femenino</label>
-                        </td>
+                        <td><label for="Motivo">Motivo</label></td>
+                        <td><textarea name="Motivo" rows="1" cols="30">Motivo Consulta</textarea></td>
                     </tr>
                     <tr>
-                        <td><label for="Intereses">Interes</label></td>
-                        <td>
-                            <input name="cbipeliculas" type="checkbox" checked="checked" /> Peliculas
-                            <br/>
-                            <input name="cbilibros" type="checkbox"/>Libros
-                            <br/>
-                            <input name="cbiinternet" type="checkbox"/> Internet
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="comentarios">Comentarios</label></td>
-                        <td><textarea name="comentarios" rows="2" cols="30">Tus comentarios aquí...</textarea></td>
+                        <td><label for="Mensaje">Mensaje</label></td>
+                        <td><textarea name="Mensaje" rows="2" cols="30">Mensaje...</textarea></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -73,7 +54,6 @@
                         </td>
                     </tr>
                 </table>
-            </p>
         </form>
     </body>
 </html>

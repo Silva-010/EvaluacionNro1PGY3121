@@ -1,0 +1,20 @@
+table, input{
+    color:black;
+    font-family: gigaregu;
+}
+
+textarea{
+    color: grey;
+    font-family: gigaregu;
+}
+
+/*FUENTES*/
+@font-face{
+    font-family: gigabold;
+    src: url(Fuentes/Locomotype\ \ GigaSansBold.otf);
+}
+
+@font-face{
+    font-family: gigaregu;
+    src: url(Fuentes/Locomotype\ \ GigaSansRegular.otf);
+}
