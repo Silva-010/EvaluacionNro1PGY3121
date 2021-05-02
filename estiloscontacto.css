@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: white;
+    font-family: gigaregu;
+    padding: 0 1.5em;
+}
+
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+    font-family: gigabold;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 hsl(199, 59%, 22%);
+}
+
+.contact-wrapper > *{
+    padding: 1em;
+}
+
+.contact-form{
+    background-color: hsl(199, 59%, 22%);
+}
+
+.contact-form form{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1em;
+}
+
+.contact-info{
+    background-color: white;
+    color: hsl(199, 59%, 22%);
+}
