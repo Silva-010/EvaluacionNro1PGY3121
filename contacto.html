@@ -8,6 +8,7 @@
         <meta name="viweport" content="width=device-width, initial-scale=1.0"> <!--Diseño responsivo-->
         <meta http-equiv="X-UA-Compatible" content="ie-edge"> <!--Compatibilidad con navegadores web-->
         <title>Pagina de Contacto</title>
+        <!--Llamando a las paginas de stilos css-->
         <link rel="stylesheet" href="estiloscontacto.css">
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/b2bdf90e64.js" crossorigin="anonymous"></script>
@@ -16,6 +17,7 @@
 
     <body>
 
+        <!--Menu de Navegacion-->
         <header>
             <div class="ancho">
               <div class="logo">
@@ -34,15 +36,18 @@
             </div>
         </header>
 
+        <!--Contenedor del formulario de contacto-->
         <div class="content">
             <h1>.</h1>
             <h1>.</h1>
             
-            <div class="contact-wrapper"> <!--Contenedor que agrupa todo-->
+            <div class="contact-wrapper"> <!--Contenedor del formulario de contacto y de informacion-->
 
+                <!--Formulario de Contacto-->
                 <div class="contact-form">
                     <h3>Contáctanos</h3>
                     <form action="">
+                        <!--Label con input para escribir-->
                         <p>
                             <label for="NombreCompleto">Nombre Completo</label>
                             <input type="text" name="NombreCompleto" id="NombreCompleto">
@@ -63,14 +68,17 @@
                             <label>Mensaje</label>
                             <textarea name="mensaje" rows="3"></textarea>
                         </p>
+                        <!--Boton-->
                         <p class="block">
+                            <!--on click para dar una mensaje de alerta cuando se presione el boton de enviar-->
                             <button type="submit" onclick="alert('Tu Solicitud fue Ingresada Correctamente')">
                                 Enviar
                             </button>
                         </p>
                     </form>
                 </div>
-                
+
+                <!--Informacion de Contacto-->
                 <div class="contact-info">
 
                     <h4>Información de la Veterinaria</h4>

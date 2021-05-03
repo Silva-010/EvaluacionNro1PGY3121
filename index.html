@@ -6,8 +6,11 @@
     <meta name="viweport" content="width=device-width, initial-scale=1.0"> <!--Diseño responsivo-->
     <meta http-equiv="X-UA-Compatible" content="ie-edge"> <!--Compatibilidad con navegadores web-->
     <title>EvaluacionNro1</title>
+    <!--Llamando a las paginas de stilos css-->
     <link rel="stylesheet" href="estilos.css">
 
+    <!--Libreria de Bootstrap-->
+    <!--Llamada a la hoja de estilo de Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
@@ -21,7 +24,7 @@
   </head>
   
   <body>
-
+    <!--Menu de Navegacion-->
     <header>
       <div class="ancho">
         <div class="logo">
@@ -40,16 +43,22 @@
       </div>
     </header>
 
+    <!--Carrusel-->
+    
+    <!--Div que contiene todo lo del carrusel-->
     <div id="carruselveterinaria" class="carousel slide" data-ride="carousel">
 
+      <!--Lista ordenada con los botones inferiores que permite moverse entre las imagenes-->
       <ol class="carousel-indicators">
         <li data-target="#carruselveterinaria" data-slide-to="0" class="active"></li>
         <li data-target="#carruselveterinaria" data-slide-to="1"></li>
         <li data-target="#carruselveterinaria" data-slide-to="2"></li>
       </ol>
 
+      <!--Div que contiene los slides del carrusel-->
       <div class="carousel-inner">
 
+        <!--El slide main o el primero que se muestra-->
         <div class="carousel-item active">
 
           <a href="servicios.html"><img class="d-block w-100" src="img/slide1.jpg" alt="..."></a>
@@ -61,6 +70,7 @@
 
         </div>
 
+        <!--Segundo Slide-->
         <div class="carousel-item">
 
           <a href="servicios.html"><img class="d-block w-100" src="img/slide2.jpg" alt="..."></a>
@@ -72,6 +82,7 @@
 
         </div>
 
+        <!--Tercer Slide-->
         <div class="carousel-item">
 
           <a href="servicios.html"><img class="d-block w-100" src="img/slide3.jpg" alt="..."></a>
@@ -85,6 +96,7 @@
 
       </div>
 
+      <!--Definiendo los botones para cambiar de foto-->
       <a href="#carruselveterinaria" class="carousel-control-prev" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
