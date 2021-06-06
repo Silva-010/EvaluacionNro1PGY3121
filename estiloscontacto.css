@@ -151,6 +151,10 @@ div{
     outline: 0;
 }
 
+.contact-form form .alert-danger{
+    color: red;
+}
+
 .contact-info{
     background-color: white;
     color: hsl(199, 59%, 22%);

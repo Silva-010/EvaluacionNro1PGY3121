@@ -13,6 +13,48 @@
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/b2bdf90e64.js" crossorigin="anonymous"></script>
 
+        <!--Llamada a Librerias-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        -->
+        <script src='https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js'></script>
+        
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#error").hide();  //ocultamos el cuadro de error
+
+                //procedemos a validar el formulario
+                $("#formulario").submit(function(){
+                    var mensaje = "";
+                    if ($("#nombre").val().trim().length == 0){
+                        mensaje = "El nombre esta en blanco";
+                    }
+
+                    if ($("#email").val().trim().length == 0){
+                        mensaje = "El Correo Electronico esta en blanco";
+                    }
+
+                    if ($("#ciudad").val().trim().length == 0){
+                        mensaje = "Ciudad de Residencia esta en blanco, por favor ingreselo";
+                    }
+
+                    //Evitamos que se envien los datos del formulario
+                    if(mensaje != ""){
+                        $("#error").html(mensaje); //muestra mensaje en el div
+                        $("#error").show();        //hacemos aparecer el div
+                        event.preventDefault();    //previene que se manden los datos si hay algun erro
+                    }
+                })
+            })
+        </script>
+
     </head>
 
     <body>
@@ -46,23 +88,23 @@
                 <!--Formulario de Contacto-->
                 <div class="contact-form">
                     <h3>Contáctanos</h3>
-                    </br></br>
+                    
                     <form action="" method="POST" id="formulario">
                         <!--Label con input para escribir-->
                         <div class="form-group">
                             <label for="NombreCompleto">Nombre Completo</label>
-                            <input type="text" name="NombreCompleto" id="NombreCompleto" class="form-control" placeholder="Ingresé su Nombre Completo">
+                            <input type="text" name="NombreCompleto" id="nombre" class="form-control" placeholder="Ingresé su Nombre Completo">
                         </div>
                         <div class="form-group">
                             <label for="correo">Correo Electrónico</label>
-                            <input type="email" name="CorreoElectronico" id="correo" placeholder="Ingresé su Correo Electrónico">
+                            <input type="email" name="CorreoElectronico" id="email" placeholder="Ingresé su Correo Electrónico">
                         </div>
                         <div class="form-group">
                             <label>Rut o Pasaporte</label>
                             <input type="text" name="identificacion" id="identificacion">
                         </div>
                         <div class="form-group">
-                            <label>Teléfono</label>
+                            <label>Teléfono (Opcional)</label>
                             <input type="number" name="telefono" id="telefono" placeholder="Ingresé su Número de Teléfono">
                         </div>
                         <div class="form-group">
@@ -74,12 +116,18 @@
                             <textarea name="comentarios" rows="1" id="comentarios" placeholder="Ingresé Comentarios"></textarea>
                         </div>
                         <!--Boton-->
-                        <p class="block">
+                        <div class="form-group">
                             <!--on click para dar una mensaje de alerta cuando se presione el boton de enviar-->
-                            <button type="submit" onclick="alert('Tu Solicitud fue Ingresada Correctamente')">
+                            <button type="submit"  id="enviar" value="Enviar">
                                 Enviar
                             </button>
-                        </p>
+                        </div>
+                        <div class="form-group">
+                            <button type="reset" id="limpiar" value="Limpiar">
+                                Limpiar
+                            </button>
+                        </div>                 
+                        <div id="error" class="alert alert-danger form-group" role="alert"></div>
                     </form>
                 </div>
 
