@@ -45,6 +45,10 @@
                         mensaje = "Ciudad de Residencia esta en blanco, por favor ingreselo";
                     }
 
+                    if ($("#comentarios").val().trim().length > 50){
+                        mensaje = "El Comentario sobrepasa el limite de 50 caracteres";
+                    }
+
                     //Evitamos que se envien los datos del formulario
                     if(mensaje != ""){
                         $("#error").html(mensaje); //muestra mensaje en el div
