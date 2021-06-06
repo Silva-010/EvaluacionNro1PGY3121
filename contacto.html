@@ -46,28 +46,33 @@
                 <!--Formulario de Contacto-->
                 <div class="contact-form">
                     <h3>Contáctanos</h3>
-                    <form action="">
+                    </br></br>
+                    <form action="" method="POST" id="formulario">
                         <!--Label con input para escribir-->
-                        <p>
+                        <div class="form-group">
                             <label for="NombreCompleto">Nombre Completo</label>
-                            <input type="text" name="NombreCompleto" id="NombreCompleto">
-                        </p>
-                        <p>
+                            <input type="text" name="NombreCompleto" id="NombreCompleto" class="form-control" placeholder="Ingresé su Nombre Completo">
+                        </div>
+                        <div class="form-group">
                             <label for="correo">Correo Electrónico</label>
-                            <input type="email" name="CorreoElectronico">
-                        </p>
-                        <p>
+                            <input type="email" name="CorreoElectronico" id="correo" placeholder="Ingresé su Correo Electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label>Rut o Pasaporte</label>
+                            <input type="text" name="identificacion" id="identificacion">
+                        </div>
+                        <div class="form-group">
                             <label>Teléfono</label>
-                            <input type="tel" name="telefono">
-                        </p>
-                        <p>
-                            <label>Motivo consulta</label>
-                            <input type="text" name="veterinario">
-                        </p>
-                        <p class="block">
-                            <label>Mensaje</label>
-                            <textarea name="mensaje" rows="3"></textarea>
-                        </p>
+                            <input type="number" name="telefono" id="telefono" placeholder="Ingresé su Número de Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label>Ciudad de Residencia</label>
+                            <input type="text" name="ciudad" id="ciudad" placeholder="Ingresé su Ciudad de Residencia">
+                        </div>
+                        <div class="form-group">
+                            <label>Comentarios</label>
+                            <textarea name="comentarios" rows="1" id="comentarios" placeholder="Ingresé Comentarios"></textarea>
+                        </div>
                         <!--Boton-->
                         <p class="block">
                             <!--on click para dar una mensaje de alerta cuando se presione el boton de enviar-->
