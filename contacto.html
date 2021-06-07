@@ -49,6 +49,20 @@
                         mensaje = "El Comentario sobrepasa el limite de 50 caracteres";
                     }
 
+                    if ($("#txtidentificacion").val().trim().length == 0){
+                        mensaje = "Debe ingresar su identificación";
+                    }
+
+                    let opcion = $('select option:selected').val();
+
+                    if(opcion == 0){
+                        mensaje = "Debe seleccionar su identificacion";
+                    }
+
+                    if(opcion == 1){
+
+                    }
+
                     //Evitamos que se envien los datos del formulario
                     if(mensaje != ""){
                         $("#error").html(mensaje); //muestra mensaje en el div
@@ -104,8 +118,13 @@
                             <input type="email" name="CorreoElectronico" id="email" placeholder="Ingresé su Correo Electrónico">
                         </div>
                         <div class="form-group">
-                            <label>Rut o Pasaporte</label>
-                            <input type="text" name="identificacion" id="identificacion">
+                            <label>Identificacion:</label>
+                            <select id="identificacion" name="identificaion" required>
+                                <option disabled selected="" value="0">Seleccione su identificacion</option>
+                                <option value="1">Rut</option>
+                                <option value="2">Pasaporte</option>
+                            </select>
+                            <input type="text" name="identificacion" id="txtidentificacion" placeholder="Ingrese su Identificación">
                         </div>
                         <div class="form-group">
                             <label>Teléfono (Opcional)</label>

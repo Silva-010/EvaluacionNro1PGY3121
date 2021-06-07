@@ -121,7 +121,12 @@ div{
 }
 
 
-
+.contact-form form select{
+    font-family: gigabold;
+    font-size: 11px;
+    height: 24px;
+    width: 61%;
+}
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea{
