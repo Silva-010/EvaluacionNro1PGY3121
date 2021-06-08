@@ -148,9 +148,17 @@ div{
     font-family: gigabold;
 }
 
-.contact-form form button:hover,
-.contact-form form button:focus{
-    background: rgb(141, 141, 141);
+.contact-form form .btn-danger:hover,
+.contact-form form .btn-danger:focus{
+    background: rgb(0, 132, 255);
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-form form .btn-primary:hover,
+.contact-form form .btn-primary:focus{
+    background: rgb(255, 0, 0);
     color: white;
     transition: background-color 1s ease-out;
     outline: 0;
