@@ -25,6 +25,8 @@
         -->
         <script src='https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js'></script>
         
+        <script src="validacionrut.js"></script>
+        <script src="funciones.js"></script>
 
         <script type="text/javascript">
             $(document).ready(function(){
@@ -59,6 +61,8 @@
                         mensaje = "Debe seleccionar su identificacion";
                     }
 
+                    let rut = $("#txtidentificacion").val();
+                    let rutValidador = new RutValidador(rut)
                     if(opcion == 1){
 
                     }
