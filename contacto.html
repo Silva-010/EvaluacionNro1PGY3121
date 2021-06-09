@@ -34,6 +34,9 @@
                 //procedemos a validar el formulario
                 $("#formulario").submit(function(){
                     var mensaje = "";
+                    //val Este método devuelve el primer valor del elemento coincide con el valor de la propiedad.
+                    //El método trim( ) elimina los espacios en blanco en ambos extremos del string
+                    //length cuenta los caracteres
                     if ($("#nombre").val().trim().length == 0){
                         mensaje = "El nombre esta en blanco, por favor ingresar su Nombre Completo";
                     }
@@ -54,8 +57,10 @@
                         mensaje = "Debe ingresar su identificación";
                     }
 
+                    //definimos opcion como cuando algun objeto esta seleccionado en la lista
                     let opcion = $('select option:selected').val();
 
+                    //si la opcion = 0 o que no se ha seleccionado nada manda un mensaje
                     if(opcion == 0){
                         mensaje = "Debe seleccionar su identificacion";
                     }
@@ -170,13 +175,17 @@
 
         </div>
 
+        <!--se define el loader o icono de carga-->
         <div id="loader" class="loader">Loading...</div>
+        <!--Definimos el container donde se mostraria la localizacion, la fecha, descripcion, temperatura, humedad y presion-->
         <div id="container" class="contaier">
+            <!--Div donde se muestra la localizacion, la fecha, descripcion-->
             <div class="block">
                 <div id="location"></div>
                 <div id="date"></div>
                 <div id="description"></div>
             </div>
+            <!--Datos ambientales temperatura, humedad y presion-->
             <div class="block">
                 <div class="information-container">
                     Temperatura
@@ -192,6 +201,7 @@
                 </div>
             </div>
         </div>
+        <!--Llamadas a .js-->
         <script src="java.js"></script>
         <script src="validarRUT.js"></script>
 
